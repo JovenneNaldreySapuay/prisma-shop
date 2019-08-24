@@ -4,9 +4,9 @@ const Mutation = require('./resolvers/Mutation');
 const db = require('./db');
 
 function createServer() {  
-  
   return new GraphQLServer({
-    typeDefs: 'src/generated/prisma.graphql',
+    //typeDefs: 'src/generated/prisma.graphql',
+    typeDefs: 'src/schema.graphql',
     resolvers: {
       Query,
       Mutation
